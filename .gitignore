@@ -33,6 +33,11 @@ compose.override.yml
 docker-compose.override.yaml
 docker-compose.override.yml
 
+# docker
+volumes/db/data
+volumes/storage
+test.http
+
 # storybook
 storybook-static
 
