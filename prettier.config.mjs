@@ -1,0 +1,28 @@
+export default {
+  plugins: [
+    "prettier-plugin-tailwindcss",
+    "@ianvs/prettier-plugin-sort-imports",
+  ],
+  importOrder: [
+    "^react$",
+    "<TYPES>^(react)",
+    "^clsx$",
+    "<TYPES>^(clsx)",
+    "^@*next",
+    "<TYPES>^(@*next)",
+    "<BUILTIN_MODULES>",
+    "<TYPES>^(node:)",
+    "<THIRD_PARTY_MODULES>",
+    "<TYPES>^([@a-z])",
+    "^~/(.*)$",
+    "<TYPES>^~/(.*)",
+    "^[.]",
+    "<TYPES>",
+    "",
+    "^(?!.*[.]css$)[./].*$",
+    ".css$",
+  ],
+  importOrderTypeScriptVersion: "5.6.2",
+  tailwindConfig: "./tailwind.config",
+  tailwindFunctions: ["clsx", "cn", "cva", "cx"],
+};
